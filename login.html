@@ -354,15 +354,15 @@
 
                 <div class="form_header">
                   <div class="welcome_back">Welcome back</div>
-                  <div class="title">Login to your account</div>
+                  <div class="title">Sign in to your account</div>
                 </div>
 
                 <div class="mb-3 mt-3">
-                  <label for="email" class="form-label">Enter your mobile number to continue:</label>
+                  <label for="email" class="form-label">Enter your mobile number to continue</label>
                   <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
                 <div class="mb-3">
-                  <label for="pwd" class="form-label">Password: <a href="forgotpassword.html">Forgot Password?</a></label>
+                  <label for="pwd" class="form-label">Password <a data-bs-toggle="modal" data-bs-target="#forgotpassword" href="#">Forgot Password?</a></label>
                   <div class="input-group">
                     <span class="btn-show-pass"><i class="bx bx-show"></i></span>
                     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
@@ -370,7 +370,7 @@
                 </div>
                 
                 <div class="form-btn">
-                    <button class="primary-btn">Login now</button>
+                    <button class="primary-btn">Sign in now</button>
                 </div>
 
                 <div class="otherLogOpt">
@@ -385,7 +385,7 @@
                 </div>
 
                 <div class="bottom_link">
-                  <span>Don’t have an account? <a href="signup">Sign Up</a></span>                
+                  <span>Don’t have an account? <a data-bs-toggle="modal" data-bs-target="#signup" href="#">Sign Up</a></span>                
                 </div>
 
               </form>
@@ -398,6 +398,270 @@
       </div>
     </div>
     <!-- ḷogin close -->
+
+    <!-- signup start -->
+    <div class="modal fade" id="signup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+         
+          <div class="modal-body form-modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            
+            <div class="form_container">
+              <form>
+                <div class="form_logo"><img src="images/logo_cut.png" alt="" /></div>
+
+                <div class="form_header">
+                  <div class="title">Create and account</div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                  <label for="username" class="form-label">User name</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter user name" name="username">
+                </div>
+
+                <div class="mb-3 mt-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                </div>
+
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+
+                <div class="mb-3 mt-3">
+                  <label for="phone" class="form-label">Mobile number</label>
+                  <input type="tel" class="form-control" id="mobilenumber" placeholder="Enter your mobile number" name="mobilenumber">
+                </div>
+
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password</label>
+                  <div class="input-group">
+                    <span class="btn-show-pass"><i class="bx bx-show"></i></span>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                  </div>  
+                </div>
+
+                <div class="mb-3">
+                  <label for="confirmPwd" class="form-label">Confirm Password</label>
+                  <div class="input-group">
+                    <span class="btn-show-pass"><i class="bx bx-show"></i></span>
+                    <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="confirmPwd">
+                  </div>  
+                </div>
+                
+                <div class="form-btn">
+                  <!-- <button type="button" class="primary-btn" data-bs-toggle="modal" data-bs-target="#verify">Sign up now</button> -->
+                  <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#verify">Sign up now</a>
+                </div>
+
+                <div class="bottom_link">
+                  <span>Already have an account ? <a href="#" data-bs-toggle="modal" data-bs-target="#login">Sign In</a></span>                
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+    
+          
+        </div>
+      </div>
+    </div>
+    <!-- signup close -->
+
+    <!-- verify start -->
+    <div class="modal fade" id="verify">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+         
+          <div class="modal-body form-modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            
+            <div class="form_container">
+              <form>
+                <div class="form_logo"><img src="images/logo_cut.png" alt="" /></div>
+
+                <div class="form_header">
+                  <div class="title">Verify your number</div>
+                  <div class="welcome_back">we have sent you on SMS on +92 7020764458
+                    with 6 digit verification code</div>
+                </div>
+
+                <div class="mb-4 mt-3">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="row justify-content-center">
+                        <div class="col">
+                          <input type="number" class="form-control" maxlength="1" id="num_1" placeholder="" name="num_1">
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" maxlength="1" id="num_2" placeholder="" name="num_2">
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" maxlength="1" id="num_3" placeholder="" name="num_3">
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" maxlength="1" id="num_4" placeholder="" name="num_4">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-btn">
+                  <!-- <button class="primary-btn">Verify</button> -->
+                  <a class="primary-btn" href="#" data-bs-toggle="modal" data-bs-target="#thanks">Verify</a>
+                </div>
+
+                <div class="bottom_link">
+                  <span>
+                    Resend OTP in 09.09<br>
+                    <a href="#">Resend</a>
+                  </span>                
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+    
+          
+        </div>
+      </div>
+    </div>
+    <!-- verify close -->
+
+    <!-- thanks start -->
+    <div class="modal fade" id="thanks">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+         
+          <div class="modal-body form-modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            
+            <div class="success_container">
+              <form>
+                <div class="icons_block"><img src="images/Sticker.png" alt="" /></div>
+
+                <div class="success_header">
+                  <div class="success_title">Password Changed!</div>
+                  <div class="success_para">Your password has been changed successfully.</div>
+                </div>
+
+                
+                <div class="form-btn">
+                  <!-- <button class="primary-btn">Verify</button> -->
+                  <a class="primary-btn" href="home.html">Back to Sign in</a>
+                </div>
+
+                
+              </form>
+            </div>
+
+          </div>
+    
+          
+        </div>
+      </div>
+    </div>
+    <!-- thanks close -->
+
+    <!-- forgotpassword start -->
+    <div class="modal fade" id="forgotpassword">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+         
+          <div class="modal-body form-modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            
+            <div class="form_container">
+              <form>
+                <div class="form_logo"><img src="images/logo_cut.png" alt="" /></div>
+
+                <div class="form_header">
+                  <div class="title">Forgot password</div>
+                  <div class="welcome_back">Don't worry! It occurs. Please enter the email address linked with your account.</div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                  <label for="email_number" class="form-label">Enter your emailid or mobile number</label>
+                  <input type="email_number" class="form-control" id="email_number" placeholder="Enter email" name="email_number">
+                </div>
+                
+                
+                <div class="form-btn">
+                  <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#resetpassword">Send code</a>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+    
+          
+        </div>
+      </div>
+    </div>
+    <!-- forgotpassword close -->
+
+     <!-- resetpassword start -->
+    <div class="modal fade" id="resetpassword">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+         
+          <div class="modal-body form-modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            
+            <div class="form_container">
+              <form>
+                <div class="form_logo"><img src="images/logo_cut.png" alt="" /></div>
+
+                <div class="form_header">
+                  <div class="title">Reset password</div>
+                  <div class="welcome_back">Your new password must be unique from those previously
+                    used.</div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password</label>
+                  <div class="input-group">
+                    <span class="btn-show-pass"><i class="bx bx-show"></i></span>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pswd">
+                  </div>  
+                </div>
+                
+                <div class="mb-3">
+                  <label for="confirmPwd" class="form-label">Confirm Password</label>
+                  <div class="input-group">
+                    <span class="btn-show-pass"><i class="bx bx-show"></i></span>
+                    <input type="password" class="form-control" id="confirmPwd" placeholder="Enter your confirm password" name="confirmPwd">
+                  </div>  
+                </div>
+                
+                <div class="form-btn">
+                    <button class="primary-btn">Reset password</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+    
+          
+        </div>
+      </div>
+    </div>
+    <!-- resetpassword close -->
+
+
+    <!--  data-bs-toggle="modal" data-bs-target="#login" -->
 
 </body>
 </html>
